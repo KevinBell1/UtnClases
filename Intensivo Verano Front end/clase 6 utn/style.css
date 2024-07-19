@@ -1,0 +1,70 @@
+/* 
+propiedades
+
+    -color (color de la letra)
+    -heigth
+    -width
+    -background-color (color del fondo)
+    -font-size (tamaño de la letra)
+    -border-radius (borde redondeado)
+    -border (borde al cuadrado)
+    -text-shadow (sombras)
+    -font-weith (ancho de la letra)
+    -letter-spacing(espacio entre letras
+    -word-spacing(espacio entre palabras)
+    -line-height(espacio entre lineas)
+    -margin (espaciado entre el limite y mi elemento o margen) (margin solo pone un margen simetrico a todos los lados, si pones 2 tipos de pixeles ejemplo, 100px 50x 20px 30px(seria vertical 100, horizontal 50, bottom 20, left 30)(los elementos en linea no pueden recibir margen, solamente horizontal)
+        margin top(margen hacia arriba)
+        margin left(margen hacia la izquierda, que mueve el elemento a la derecha)
+        margin rigth (viceversa)
+        margin bottom (hacia abajo)
+
+    */
+
+/* box modeling :nos permite saber cuales son las dimensiones de todos los elementos que estan dentro de body */
+
+/*
+propiedades del box modeling
+-heith (alto de un elemento)
+-weigth (ancho de un elemento)
+*/
+
+/* tipos de elementos
+elementos en bloque (utilizan todo el ancho disponible por ejemplo los h y los p. los div, main, footer, header, section, aside, nav, article)
+elementos en linea (ocupan exactamente el ancho que ocupa el texto)(los elementos en linea no pueden recibir ancho, es decir weigth)(span, a, label)
+elementos en linea y en bloque (por ejemplo el input,textarea, button, select ya que se comportan en linea pero pueden recibir ancho y estar en la misma linea al mismo tiempo, iframe, audio,video)
+
+
+
+*/
+/* para llamar a un h2 dentro de un div especifico, debemos poner .box(nombre del h2 en class) h2 */
+/* <body>
+    <h1>hola</h1>
+    <label for=""></label><!-- espacio para que el usuario escriba-->
+    <link rel="stylesheet" href="./style.css">
+    <i>sirve para escribir en italica o cursiva</i>
+    <b>escribe en negrita</b>
+    <strong>escribe en negrita con semantica</strong>
+</body> */
+*{
+    /* NORMALIZACION (hacer antes que nada en css) */
+        box-sizing: border-box;/* el selector universal o *{ sirve para darle una propiedad general para toda la pagina, y ponemos border.box para no tener que ponerlo en todos los elementos *//*box-sizing; border box; sirve para que no crezca la caja cuando aplicamos padding */
+        margin: 0px; /* todo aquello que tiene margen por defecto vuelve a cero */
+        padding: 0px;
+}
+div{/* cuando llamamos con .antes del elemento llamamos a una clase, cuando lo hacemos sin el llamamos a un elemento */
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    color: white;
+    margin: 0px;
+    padding-top:20px ;/* un espaciado dentro de la caja, pero tambien hace crecer la caja */
+    padding-left: 20px;
+    display: inline-block;/* cambiar la naturaleza para que un div sea inline block y poder ponerlos uno al lado del otro */
+}
+
+b{
+    margin: 0px 20px;
+    color: blueviolet;
+    padding: 5px;
+}

@@ -1,0 +1,26 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.padre{
+    background-color: green;
+    height: 100vh; /* viewport height, porcentaje de altura de la pantalla */
+    width: 100vw;
+    display: flex;
+    gap: 50px;/* solo gap genera espacios para todos lados */
+    flex-wrap: wrap;/* cuando se queda sin espacio a lo ancho, en vez de cambiar de tamaño los elementos se posicionan debajo */
+    justify-content: center; /* eje x */
+    padding: 0 50px;
+    align-items: center; /* eje y */
+}
+
+.padre .hijo{
+    background-color: blueviolet;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+.padre .especial{
+    background-color: blue;
+}

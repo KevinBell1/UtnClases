@@ -1,0 +1,35 @@
+p{
+    color:black;
+}
+/* selectores */
+
+.caja{/* aqui le damos caracteristicas al inicio caja */
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+.caja-producto{/* aqui especificamos mas */
+    width: 200px;
+    height: 200px;
+    background-color: rgb(218, 236, 230);
+}
+.caja-imagen{
+    width: 200px;
+    height: 200px;
+    background-color:aquamarine ;
+}
+.caja-item{
+    background-color: blue;
+    width: 230px;/* cuando se repiten propiedades siempre se aplica la ultima */
+}
+header a{/* una class es mas especifica que un header por ende si dos valores se hiciesen el que tenga mas especificidad va a aplicar el formato, si ponemos .header y hacemos una clase header en index valeria mas igualmente */
+    color: red !important; /* mala practica */ /* el important se puede utilizar para chequear si el codigo no se esta aplicando por un problema de especificidad, si este no es el problema seguramente sea un codigo mal escrito */
+}
+/* dentro de los niveles de especificidad tenemos una piramide de valores
+important(una definicion que se aplica manualmente para agregar una especificidad maxima)
+estilo en linea
+id
+class
+elementos
+*/

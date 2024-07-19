@@ -1,0 +1,24 @@
+@import url("./font.css");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+*{
+    var(--ff--normal);
+}
+:root{
+    --ff--normal: "Poppins", sans-serif;
+    --ff--titulo: "Inter", sans-serif;
+}
+h1{
+    font-family: var(--ff--normal);
+    font-weight: 100px;
+    font-size: 60px;
+    
+}
+
+/* siempre usar fuentes con sans */
+/* google fonts: (poppins es una buena fuente)pagina donde se pueden traer las fuentes, elegimos una,   oprimimos get font, get embed code(nos da un codigo para llamar a la pagina), y siempre usar importar una vez que seleccionemos todos los fuentes que queramos, asi se pasan todas de un solo link */
+/* recomendable hacer un comentario para cuando utilice una fuente, ejemplo uso inter y agrego cmt diciendo utilizo inter para esto */
+/* root sirve para guardar en este archivo los tipos de letra con un nombre clave para llamarlo ej: --ff--normal, lo llamamos como arriba, pudiendo cambiar el nombre entre comillas. si se cambia el codigo se cambio todo aquello a lo que se le aplico la variable*/
+/* color picker en extensiones de google para sacar el color que quiero */
+/* whatfont es una extension de google que dice que fuente se esta usando cuando se activa y las caracteristicas */
+/* whatruns hace un analisis rapido de que utiliza la pagina */
+/* bootstrap icons sirve para traer iconos o framework gratuitos. para poder pegar el icono bajamos y nos aparece importar*/

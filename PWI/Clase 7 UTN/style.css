@@ -1,0 +1,15 @@
+h2{
+    color: blue;
+    font-size: 14px;
+    letter-spacing: -1px;
+    word-spacing: 10px;
+    text-decoration: underline red;
+    text-shadow: /* eje x | eje y | difuminado | color */; /* text shadow en google nos da la muestra de los valores que queramos poner */
+    text-shadow: 200px 10px 3px rgb(136, 10, 10),
+    200px 50px 3px rgb(136, 10, 10),
+    0px 0px 10px blue    ;
+    text-align: center;
+    width: 100px;
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 10px;
+}

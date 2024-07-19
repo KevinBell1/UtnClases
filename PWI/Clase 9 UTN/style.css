@@ -1,0 +1,67 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.colors-cards{
+    display: flex;
+    gap: 20px;
+    width: (250px *4 + 20px *3 + 20px* 2); /* solamente hicimos que el ancho de la seccion mida lo mismo que las cartas y sus gaps y el padding */
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+.color-card{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 300px;
+    gap: 15px;
+}
+.color-card .colors{
+display: flex;
+flex-direction: column;
+border-radius: 15px;
+width: 100%;
+height: 100%;
+overflow: hidden;
+background-color: antiquewhite;
+}
+.color-card .colors .color:nth-child(1){
+background-color: blue;
+height: 40%;
+}
+.color-card .colors .color:nth-child(2){ 
+    background-color: rgb(255, 0, 0);
+    height: 30%;
+    }
+.color-card .colors .color:nth-child(3){
+    background-color: rgb(0, 162, 255);
+    height: 17%;
+}
+.color-card .colors .color:nth-child(4){
+background-color: rgb(225, 0, 255);
+height: 13%;
+}
+.colors-cards .colors-cards-controls{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+    .colors-cards .colors-cards-controls .btn-like{
+    height: 38px;
+    padding: 0px 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.021);
+    border-radius: 10px;
+    background-color: white;
+    font-size: 16px;
+    gap: 5px;
+    }
+    .colors-cards .colors-cards-controls .time{
+    color: #9d9d9d;
+    font-size: 14px;
+    }

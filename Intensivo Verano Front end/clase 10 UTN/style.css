@@ -1,0 +1,80 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --ff-normal: "Poppins", sans-serif;
+    --fc-principal:  rgb(255,230,0);
+}
+header{
+    background-color: var(--fc-principal);
+    padding: 2vh 10%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 2;
+}
+.input-conteiner{
+    position: relative;
+    width: 100%;
+    max-width: 580px;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    }
+.input-edit-search{
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.213);
+    border: none;
+    padding: 10px 60px 10px 16px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 2px;
+}
+.input-edit-search::placeholder{
+    font-family: var(--ff-normal);
+}
+.input-edit-search:focus{
+    outline: 0;
+    border: 1.5px solid rgb(114, 114, 255);
+}
+.input-conteiner .simbol{
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    right: 16px;
+    border-left: 1px solid rgb(182, 179, 179);
+    padding-left: 10px;
+    height: 70%;
+    }
+
+    .publicity-conteiner{
+        max-width: 340px;
+    }
+    .publicity-conteiner img{
+        width: 100%;
+    }
+    .biografy{
+        width: 100%;
+        margin-top: 100px;
+        display: flex;
+        padding: 0 10%;
+        gap: 10px;
+
+    }
+    .biografy img{
+        width: 50px;
+        height: 50px;
+        margin-top: 100px;
+        position: sticky;
+        top: 100px;
+    }
+    .biografy h1{
+    }

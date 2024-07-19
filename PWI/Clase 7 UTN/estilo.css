@@ -1,0 +1,10 @@
+div{
+    background-color: black;
+    height: 100px;
+    border: solid red 10px;
+    border-bottom: solid black 10px;
+}
+
+/* box-sizing hace que el padding se contabilice para adentro, haciendo que la caja sume pixeles para adentro y el tamaño de la caja sera el width y el height, sin sumar el padding. Por eso se debe poner en el asterisco o la normalizacion */
+/* si en inspeccionar ponemos la opcion calculado podemos ver los paddings borders y margins */
+/* el maegin y padding tienen las direcciones en el orden del reloj. arriba 1 derecha 2 abajo 3 izquierda 4 */

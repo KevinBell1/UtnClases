@@ -1,0 +1,17 @@
+/* propiedades de texto */
+.titulo{
+    color: green;
+    font-size: 40px;
+    font-weight: 600;
+    text-decoration: solid 1px underline ;/* sold significa tipo de subrayado sin puntitos, que ocupe 1pixel y debajo de la linea, en mdn reference se puede chusmear todo. linethrougth sirve para tachar, puede servir para tachar el precio anterior etc */
+
+}
+p{
+    line-height: 10px;
+    word-spacing: 10px;
+    letter-spacing: 1px;
+}
+.subtitulo{
+
+    text-shadow: px 0px 2px rgb(95, 88, 88);
+}/* el primer valor es el eje x, el segundo el y, y el tercero es difuminado */

@@ -1,0 +1,35 @@
+*{
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+}
+.box{
+    margin: 100px;
+    width: 300px;
+    height: 300px;
+    background-color: rgb(184, 179, 179);
+    border-radius: 10%;
+    color: white;
+    padding: 10px;
+}
+p{
+    font-size: 17px;
+}
+.pricenumb{
+    color: gold;
+    text-shadow: 0px 0px 3px;
+    padding-left: 5px ;
+    font-size: 25px;
+}
+.price{
+    padding-left: 30px;
+    color: gold;
+    font-size: 25px;
+    font-weight: 300;
+}
+button{
+    background-color: gold;
+    border-color: goldenrod;
+    padding: 10px;
+}
+/* con cursos en css podemos cambiar el cursor, pero sus funciones dependen de javascript */

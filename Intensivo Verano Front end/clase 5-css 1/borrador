@@ -1,0 +1,5 @@
+<!-- modo de escribir: bem css examples -> sourcedcode.com what is bem (recomendable). camelCase. modo-normal-->
+
+
+    background-color: black;
+    color: white;

@@ -1,0 +1,117 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+:root{
+    --ff-normal: "DM Sans", sans-serif;
+    --secondary-color: #00B092 ;
+    --tertiary-color: #FAFBFF;
+    --quaternary-color:rgb(53,28,106);
+    --link-color: #1d1e20;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: var(--ff-normal);
+}
+@keyframes de-derecha-a-izquierda{
+    0%{
+        margin-left: 40px;
+    }
+    100%{
+        0%
+    }
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    height: 88px;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+nav a{
+    padding: 0px 0px 0px 16px;
+    font-size: 1rem;/* 16px por default en html */ /* em es en valor segun su padre */
+    text-decoration: none;
+    color: var(--link-color);
+    gap: 12px;
+    margin: 0px 4px 0px 0px;
+    display: inline-block;
+    animation-name: de-derecha-a-izquierda;
+    animation-duration: 4s;
+}
+nav a:hover{
+    opacity: 0.7;
+}
+
+.btn-secondary{
+    font-weight: 700;
+    border: 2px solid;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 12px 16px;
+}
+.btn-secondary:hover{
+    transform: scale(1.2);
+    transition:all 0.5s ease-in-out;
+}
+
+.cards-section{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 100px;
+    gap: 24px;
+}
+.review-card{
+    background-color: var(--tertiary-color);
+    line-height: 24px;
+    padding: 32px 24px;
+    width: 100%;
+}
+h2{
+    font-size: 24px;
+    font-weight: 100px;
+}
+p{
+    font-size: 16px;
+    color: var(--quaternary-color);
+    font-weight: 100px;
+    margin: 16px 0px;
+}
+.card-part-up{
+    display: flex;
+
+}
+.review-card-opinion-stars{
+    color: var(--secondary-color);
+    padding: 16px 0px 0px;
+}
+.card-part-up i{
+    font-size: 1.5rem;
+}
+header i{
+    display: none;
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+@media screen and (max-width: 1024px) {
+    nav a{
+        display: none;
+    }
+    header i{
+        display: flex;
+    }
+    html{
+        font-size: 16px;
+    }
+    .cards-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 524px) {
+    html{
+        font-size: 14px;
+    }
+}

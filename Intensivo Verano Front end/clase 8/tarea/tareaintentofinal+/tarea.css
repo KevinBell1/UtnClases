@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap')
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+:root{
+    --ff--letternavs:"DM Sans", sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 88px;
+    background-color: beige;
+    padding: 10px 20px;
+    font-family: var(--ff--letternavs);
+    background-color: rgb(244,245,255);
+}
+
+a{
+    text-decoration: none;
+    font: weight 300px; ;
+    color: rgb(43,44,47);
+}
+.btn-secondary{
+    border-radius: 4px;
+    line-height: 1;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <label for="Nombre">Name:</label>
+        <input type="text" id="Nombre">
+        <br>
+        <span for="Sexo">Sex:</span><!-- esto debe de ser un span -->
+        <label for="masculino">Male</label>
+        <input type="radio" id="masculino" name="sexopcion"> <!-- usar siempre todo minusculas -->
+        <label for="femenino">Female</label>
+        <input type="radio" id="femenino" name="sexopcion"> <br>
+        <label for="ciudad">Country:</label>
+        <select name="" id="ciudad">
+            <option value="bsas">Buenos Aires</option>
+            <option value="mendoza">Mendoza</option>
+            <option value="cordoba">Cordoba</option>
+            <option value="NADA" selected disabled>No selected</option>
+        </select><br>
+        <label for="mensaje">Message</label><br>
+        <textarea name="" id="mensaje" cols="30" rows="10" placeholder="Message"></textarea><br><!-- esto tiene que ser textarea -->
+        <input type="radio" id="suscribirse">
+        <label for="suscribirse">Subscribe?</label><br>
+        <input type="submit" value="Send">
+
+    </form>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>mi primer formulario</h1>
+    <form><!-- Usamos label para acompañar el recuadro y el input para poner el recuadro en el cual podemos escribir, con el type -->
+        <label for="email">Ingrese su email</label>
+        <input type="email"  placeholder="email"     id="email">
+        <br>
+
+        <label for="mensaje">Ingrese su mensaje</label>
+        <textarea 
+        id="mensaje" placeholder="Mcclereance@example.com"></textarea> <!-- el tamaño despues se arregla con css -->
+        <br>
+        <Label>Selecciona tu nacionalidad</Label>
+        <select id=""><!-- select sirve para crear la lista de opciones en el cual elijamos la respuesta -->
+            <option value="NADA" selected disabled>No seleccionado</option><!--selected disables dirve para desabilitar el volver a seleccionar esa opcion -->
+            <option value="argentina">Argentina</option>
+            <option value="Francia">Francia</option><!-- se hace asi una lista de opciones de paises recomendable utilizar una inteligencia artificial para pedir una lista de paises o descargando una biblioteca de programacion con una lista de paises -->
+            
+        </select><br>
+    <input type="submit" value="Enviar">
+    <!-- esto es para aplicar el boton enviar -->
+    <label for="Situacion laboral">Estas trabajando?</label>
+    <input type="radio"> <!-- este input pone una opcion de seleccionado circular -->
+    <input type="submit" value="Enviar"> <!-- este pone el boton de enviar -->
+        <br>
+    <span>Estas trabajando?</span>
+    <label for="Afirmativa">Si</label><!-- hacemos la palabra que sirve de opcion -->
+    <input type="radio" id="Afirmativo" name="situacionlaboral"><!-- ponemos el input circular y el id es el for de label, para identificar el label al input que le corresponde. name servira para identificar un      input con otro y desseleccionar uno al seleccionar el otro -->
+    <label for="Negativa">No</label>
+    <input type="radio" id="Negativo" name="situacionlaboral"><br>
+    <Label>Ingrese su contraseña</Label>
+    <input type="password" placeholder="contraseña">
+
+    
+    </form>
+</body>
+</html>
