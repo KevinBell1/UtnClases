@@ -8,11 +8,12 @@
     height: 100vh;
     background-color: aqua;
     display: flex;
-    justify-content: spac;
+    justify-content: space;
     padding: 50px;
     gap: 50px;
     flex-wrap: wrap;
     align-items: center;
+    flex-flow: ;
 }
 .hijo{
     width: 100px;
