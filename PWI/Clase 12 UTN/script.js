@@ -1,3 +1,4 @@
+console.log("hola mundo")
 /* OPERADORES LOGICOS */
 
 /* !  NOT o negacion
