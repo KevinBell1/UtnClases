@@ -1,15 +1,19 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     text-decoration: none;
 }
+html{
+    font-size: 16px;
+}
 header{
     height: 100px;
     width: 100%;
     display: flex;
     align-items: center;
-    padding: 8px 10px 12px;
+    padding: 8px 12px 10px;
     position: fixed;
     justify-content: space-between;
     background-color: white;
@@ -19,6 +23,19 @@ p{
 }
 nav{
     display: flex;
-    padding: 0 0 0 16px;
+    padding: 0px 0px 0px 16px;
     gap: 40px;
+    min-width: 800px;
+    font-size: 1rem;
+}
+button{
+    display: none;
+}
+@media screen and (max-width: 799px){
+    nav{
+        display: none;
+    }
+    button{
+    display:flex ;
+    }
 }
