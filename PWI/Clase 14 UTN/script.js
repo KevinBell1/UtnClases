@@ -39,4 +39,7 @@ dentro del for= while(!numero || isNaN(numero)){
 /* alert("lista: \n-pepe\n-juan") */
 /* tarea */
 
-
+/* 
+for(let i = 1; i <= 3; i = +1){
+    console.log("me ejecuto")
+} */

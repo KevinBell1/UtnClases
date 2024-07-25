@@ -21,7 +21,7 @@ else{
     alert("No podes pasar")
 } */
 
-    let sueldo = prompt("Ingrese su sueldo")
+/*     let sueldo = prompt("Ingrese su sueldo")
     let añosAntiguedad = prompt("Hace cuantos años trabaja?")
     if (sueldo < 500 && añosAntiguedad>10){
         alert("Ha recibido un aumento. Su sueldo actual es de " + sueldo*1.2 )
@@ -34,4 +34,14 @@ else{
     }
     else{
         alert("no ha ingresado la informacion")
+    } */
+
+
+        /* WHILE=MIENTRAS SE REPITA ESTA ACCION */
+
+    let nombre = prompt("Ingrese su nombre")
+
+    while(nombre === "pepe"){
+        nombre = prompt("Ingrese otra vez su nombre")
     }
+    alert("ese nombre no lo conosco")
