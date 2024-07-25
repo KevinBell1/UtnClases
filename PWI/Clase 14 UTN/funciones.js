@@ -83,3 +83,4 @@ let contraseña = "pepe123"
 console.log("*".repeat(contraseña.length))
 -cambia la cantidad de letras por * 
 */
+
