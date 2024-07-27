@@ -14,3 +14,19 @@ notasTrimestres[1] = 2 /* asi se le cambia el valor */
 /* .unshift agrega la principio */
 
 /* .indexOf(elemento que quiero saber)  muestra la posicion del elemento que busco*/
+
+/* .splice(posicion buscada, cuantos elementos a partir de ahi eliminare, cual sera el nuevo elemento) */
+/*  .includes(string) devuelve un boolean que dice si esta incluido un elemento en el grupo */
+/* ej:
+
+
+nombre.splica(nombre.indexOf("valentina"), 1)
+
+o para agregar
+
+nombre.splice(nombre.indexOf("maria"),0 ,"carlos")
+
+tambien podemos tener una funcion donde retorne los eliminados
+
+const elementosEliminados = nombre.splice(nombre.indexOf("valentina"), 1)
+*/
