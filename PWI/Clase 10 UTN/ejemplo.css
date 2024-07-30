@@ -1,0 +1,79 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+.cajas{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 200px;
+}
+
+.caja-completa{
+    width: 250px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 20px
+}
+
+.caja-completa .subcaja-uno{
+    width: 250px;
+    height: 250px;
+    border-radius: 8px;
+    overflow:hidden; /*importante!*/
+}
+
+.caja-completa .subcaja-uno .caja-color:nth-child(1){
+    height: 40%;
+}
+.caja-completa .subcaja-uno .caja-color:nth-child(2){
+    height: 30%;
+}
+.caja-completa .subcaja-uno .caja-color:nth-child(3){
+    height: 17%;
+}
+.caja-completa .subcaja-uno .caja-color:nth-child(4){
+    height: 13%;
+}
+
+
+.caja-completa .subcaja-dos{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.caja-completa .subcaja-dos button{
+    height: 38px;
+    padding: 0 14px ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    background-color: #F9f9f9;
+    border: 1px solid #ececec;
+    border-radius: 10px;
+    gap: 5px;
+}
+
+.caja-completa .subcaja-dos .texto{
+    color: #9D9D9D;
+    font-size: 14px;
+}
