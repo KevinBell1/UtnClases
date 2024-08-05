@@ -62,3 +62,37 @@ function login(){
     let password = obtenerDato(datos.password)
     return {email: email,password: password}
 }
+
+
+/* HISTORIAL */
+const historial = [
+    {
+        accion: 'CALCULAR' ,
+        operacion: '+',
+        a: 1,
+        b: 2,
+        resultado: 2 
+    },
+    {
+        accion: 'CALCULAR',
+        operacion: '-',
+        a: 1,
+        b: 2,
+        resultado: -1 
+    },
+]
+
+function renderizarHistorial(historialRenderizable){
+
+    let historialStr = ""
+    for(const item of historialRenderizable){
+        historialStr = historialStr + `
+        accion: ${item.accion}
+        operacion: ${item.operacion}
+        numeros: ${item.a}, ${item.b}
+        resultado: ${item.resultado}
+        `
+    }
+    return historialStr
+}
+/* renderizar muestra en formato string lo que antes estaba en formato arrays */
