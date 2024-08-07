@@ -109,16 +109,23 @@ for(let product of products){
         <h3>${product.nombre}</h3>
         <span>PRECIO: ${product.fecha}</span>
         <br>
-        <hr>
     </div>
     `
 }
 productConteiner.innerHTML = listOfProducts
 
-const historialItem = document.querySelector(".historialItem")
+const historialItem = document.getElementsByClassName('historialItem')/* agarra todos los elementos de esta clase */
 
-for(let item of products){
-    const btn = document.createElement("button")
+for(const item of historialItem){
+    const btn = document.createElement('button')
     btn.innerText = "ver publicacion"
-    
+    item.appendChild(btn)
 }
+
+/* para averiguar que value o class tiene un imput podemos usar input.value en un console.log incluso cuando tengan dos clases en input.classList */
+/* para agregar una clase podemos usar input.classList.add("") */
+/* para quitar usamos input.classList.remove("") */
+/* interruptor a la clase (si no esta la agregamos, si esta la eliminamos)  input.classList.toggle("") */
+/* input.classList.replace("2","3") */
+/* .value muestra en forma de string las clases */
+/* .split luego del value lo pone en arrays (podemos combinarlo con el inlcude para ver si hay una clase en el elemento y ahi input classlist add */
