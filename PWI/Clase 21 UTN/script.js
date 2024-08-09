@@ -3,7 +3,7 @@ const formLoginHTML = document.getElementById("formLogin")
 
 const handleLogin = (event) => {
     event.preventDefault()
-    /* alert("Bienvenido " + formLoginHTML.username.value) */
+/*     alert("Bienvenido " + formLoginHTML.username.value) */
     const formulario = event.target.username.value
     if(formulario.length < 4 || !formulario.includes("-")){
         const errorTextHTML = document.getElementById('errorTextMessage')
@@ -40,3 +40,24 @@ const handleEmail = (event) =>{
     else console.log("su mail es: " + mailForm)
 }
 formEmailHTML.addEventListener("submit", handleEmail)
+
+
+/* const validador = {
+    username: {
+        
+    }
+}
+
+
+
+const inputs = ["username", "password"]
+const inputsInfo = {}
+
+for( let input of inputs){
+    const spanError = document.getElementById("errorText-" + input)
+    inputsInfo[input]={
+        error: 
+    }
+}
+ */
+/* seguir con el modelo escalable */
