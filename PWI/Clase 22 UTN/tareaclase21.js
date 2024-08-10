@@ -44,5 +44,11 @@ const productoObtenido = (form) => {
     return inputObj
 }
 
-const handleSubmit
+const handleSubmit = (evento) => {
+    evento.preventDefault()
+    const form = evento.target
+    const valoresProducto = productoObtenido(form)
+
+    
+}
 
