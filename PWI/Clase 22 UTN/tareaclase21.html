@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Document</title> <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <form class="formularioIngresarProducto">
+    <form id="formularioIngresarProducto">
         <div>
             <input type="text" name="producto" id="producto">
             <label for="producto">Ingrese su producto</label>
@@ -19,8 +19,8 @@
             <span id="error-precio" class="errorText"></span>
         </div>  
 
-        <div>
-            <textarea name="descripcion" id="descripcion"></textarea>
+        <div >
+            <textarea name="descripcion" id="descripcion" class="texto"></textarea>
             <label for="descripcion">describa su producto</label>
             <span id="error-descripcion" class="errorText"></span>
         </div>
@@ -36,8 +36,8 @@
             <label for="code">Codigo:</label>
             <span id="error-codigo" class="errorText"></span>
         </div>
-
+        <button type="submit">Enviar producto</button>
     </form>
-    <script src="./script.js"></script>
+    <script src="./tareaclase21.js"></script>
 </body>
 </html>

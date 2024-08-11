@@ -14,7 +14,7 @@ const VALIDACIONES = {
         errorText: "Error, el precio debe de ser un numero mayor o igual a 0",
     },
     descripcion : {
-        validacion: (descripcion) => nombre.lentgh > 100,
+        validacion: (text) => text.length > 100,
         errorText: "La descripcion debe de tener mas de 100 caracteres",
     },
     stock : {
@@ -28,8 +28,8 @@ const VALIDACIONES = {
 }
 
 const productoObtenido = (form) => {
-    const inputs = ["producto","precio", "descripcion", "stock", "code"]
-    inputObj = {}
+    const inputs = ["producto","precio", "descripcion", "stock", "code"];
+    inputObj = {};
 
     for (let input of inputs){
     const spanErrorHTML = document.getElementById("error-" + input )
@@ -46,9 +46,26 @@ const productoObtenido = (form) => {
 
 const handleSubmit = (evento) => {
     evento.preventDefault()
-    const form = evento.target
-    const valoresProducto = productoObtenido(form)
+    const form = evento.target;
+    const valoresProducto = productoObtenido(form);
+    let formularioValido = true;
 
-    
+    for(const propiedad in valoresProducto){
+        const propiedadProducto = valoresProducto[propiedad]
+        if(!propiedadProducto.validacion(propiedadProducto.valor)){
+            propiedadProducto.errorHTML.innerText = propiedadProducto.error;
+            formularioValido = false;
+        }
+        else{
+            propiedadProducto.errorHTML.innerText = ""
+        }
+    }   
+        if(formularioValido){
+            console.log("Objeto de producto: ", valoresProducto(form));
+            alert("El producto se ha incluido con exito");
+            form.reset();
+    }
 }
+
+formProductosHTML.addEventListener('submit', handleSubmit)
 
