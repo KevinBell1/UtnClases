@@ -51,9 +51,8 @@ const handleSubmit = (evento) => {
     let formularioValido = true;
 
     for(const propiedad in valoresProducto){
-        const propiedadProducto = valoresProducto[propiedad]
-        if(!propiedadProducto.validacion(propiedadProducto.valor)){
-            propiedadProducto.errorHTML.innerText = propiedadProducto.error;
+        if(!valoresProducto[propiedad].validacion(valoresProducto[propiedad].valor)){
+            valoresProducto[propiedad].errorHTML.innerText = valoresProducto[propiedad].error;
             formularioValido = false;
         }
         else{

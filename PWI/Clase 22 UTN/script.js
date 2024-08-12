@@ -41,22 +41,20 @@ obtenerInfo()
 
 
 
-const obtenerUsuarioPorId = async (id) =>{
-    const response = await fetch(URL_API +"/users/" + id,{
+const obtenerUser = async (id) =>{
+    const userBlockHTML = document.getElementById("userBlock")
+    userBlockHTML.innerHTML = `<h2>Cargando...</h2>`
+    const response = await fetch(URL_API + "/users/" + id, {
         method : "GET"
     })
-    const user = await response.json()
-    renderizarUsuario(user)
+    const dataUser = await response.json()
+    
+    userBlockHTML.innerHTML =`
+        <h2>Nombre: ${dataUser.name}</h2>
+        <span>Email: ${dataUser.email}</span>
+        <br>
+        <span>Phone :${dataUser.phone}</span>
+        `
 }
 
-const renderizarUsuario = (user) =>{
-    const userInfoHTML = document.getElementById("userBlock")
-    userInfoHTML.innerHTML = `<h2>Cargando...</h2>`
-
-    userInfoHTML.innerHTML=`
-    <h2>Nombre: ${user.name}</h2>
-    <span>Email: ${user.email}</span>
-    <br>
-    <span>Phone: ${user.phone}</span>
-    `
-}
+obtenerUser(1)
