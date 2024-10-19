@@ -6,7 +6,7 @@ const validarNumero = (numero) => {
 
 const VALIDACIONES = {
     producto : {
-        validacion: (nombre) => nombre.lentgh > 6,
+        validacion: (nombre) => nombre.length > 6,
         errorText: "El nombre debe tener mas de 6 caracteres",
     },
     precio : {
@@ -60,7 +60,7 @@ const handleSubmit = (evento) => {
         }
     }   
         if(formularioValido){
-            console.log("Objeto de producto: ", valoresProducto(form));
+            console.log("Objeto de producto: ", productoObtenido(form));
             alert("El producto se ha incluido con exito");
             form.reset();
     }

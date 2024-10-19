@@ -1,0 +1,65 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+*{ 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.color-card-section{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    gap: 55px;
+    flex-wrap: wrap;
+}
+
+.caja-completa{
+    height: 300px;
+    width: 250px;
+    gap: 15px;
+}
+.caja-completa .caja-colors-part{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.caja-colors-part .color:nth-child(1){
+    height: 40%;
+}
+.caja-colors-part .color:nth-child(2){
+    height: 30%;
+}
+.caja-colors-part .color:nth-child(3){
+    height: 17%;
+}
+.caja-colors-part .color:nth-child(4){
+    height: 13%;
+}
+
+
+
+.caja-info-part{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.btn-like{
+    height: 38px;
+    padding: 0 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.021);
+    border-radius: 10px;
+    background-color: white;
+    font-size: 16px;
+    gap: 5px;
+}
+.time{
+    color: #9d9d9d;
+    font-size: 14px;
+}
