@@ -1,0 +1,12 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.options{
+    background-color: #008069;
+    width: 100%;
+    height: 15%;
+
+}

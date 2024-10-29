@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.celular{
+    width: 320px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 20px;
+    border: solid 7px black ;
+}
+.chatHeaderInfo{
+    background-color: #00574D;
+    height: 10%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border-radius: 15px;
+}
+.foto{
+    height: 15px;
+    width: 60px;
+    padding: 100px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dataUser{
+    font-size: 13px;
+}
+.chau{
+    background-color: chartreuse;
+    border-radius: 15px;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}

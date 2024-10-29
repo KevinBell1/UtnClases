@@ -5,7 +5,7 @@ import './ChatScreen.css'
     const MOOK_MENSAJES = [
         {
             author:'Loquita',
-            text:'Hola perdida',
+            text:'Hola mi amor',
             estado:'visto',
             day:'hoy',
             hour:'11:27',
@@ -14,7 +14,7 @@ import './ChatScreen.css'
         
         {
             author:'Loquita',
-            text:'Soy yo',
+            text:'otro intento?',
             estado:'entregado',
             day:'hoy',
             hour:'11:28',

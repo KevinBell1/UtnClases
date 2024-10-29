@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.Yo{
+    width: 80%;
+    background-color: #DBF9C5;
+    display: flex;
+    padding:10px;
+    flex-direction: column;
+    border-radius: 12px;
+    box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, 0.2);
+    margin-left: 19%;
+}
+.author{
+    font-size: 15px;
+}
+
+.time{
+    font-size: 10px;
+    display: flex;
+    justify-content: end;
+    padding:7px 0px 0px 0px;
+}
+
+.texto{
+    font-size: 14px;
+    font-weight: 1020;
+}
+
+.Loquita{
+    width: 80%;
+    background-color: #CCCCCC;
+    display: flex;
+    border-radius: 12px;
+    padding:12px;
+    flex-direction: column;
+    box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, 0.2);
+}

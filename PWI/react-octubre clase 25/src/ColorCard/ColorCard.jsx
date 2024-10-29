@@ -1,5 +1,4 @@
 import React from "react";
-import '../style.css'
 
 export const ColorCard = ({tarjeta}) =>{
     const {likes, fecha, colores} = tarjeta
@@ -7,7 +6,7 @@ export const ColorCard = ({tarjeta}) =>{
         <div>
             <div className="caja-completa">
                 <div className="caja-colors-part">
-                    <ColorItemList colors = {colores}/>
+                    <ColorItemList colors={colores}/>
                 </div>
                 <div className="caja-info-part">
                     <button className="btn-like"><i class="bi bi-heart">{likes}</i></button>
@@ -18,19 +17,16 @@ export const ColorCard = ({tarjeta}) =>{
     )
 }
 
-const ColorItemList = ({colors})=>{
+const ColorItemList = ({colors}) => {
     return(
         <>
-            {colors.map(color=><ColorItem color = {color}/>)}
+            {colors.map((color, index) => <ColorItem color={color} key={color + index}/>)}
         </>
     )
 }
 
-
-const ColorItem =({color})=>{
-    return(
-        <>
-            <div className="color" style={{backgroundColor: {color}}}></div>
-        </>
+const ColorItem = ({color}) => {
+    return (
+        <div className="color" style={{backgroundColor: color}}></div>
     )
 }
