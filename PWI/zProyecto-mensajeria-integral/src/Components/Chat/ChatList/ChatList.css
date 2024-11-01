@@ -1,0 +1,17 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.lista{
+    background-image: image-set('../ChatList/messi.jpg');
+    background-size: cover;
+    height: 77%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    gap: 12px;
+    padding: 10px 5px;
+
+}

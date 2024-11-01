@@ -15,15 +15,34 @@
 }
 
 
-.foto{
-    background-color: yellow;
+.Messi{
+    background-image: image-set("./messi-world-cup.jpg");
+    background-size: cover;
+    background-position: center;
     height: 50px;
     width: 50px;
     border-radius: 50px;
-    display: flex;
     gap: 5px;
-    align-items: center;
-    justify-content: center;
+    margin-left: 10px;
+}
+.Centu{
+    background-image: image-set("Centurio.avif");
+    background-size: cover;
+    background-position: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    gap: 5px;
+    margin-left: 10px;
+}
+.Ludmi{
+    background-image: image-set("./WhatsApp Image 2024-11-01 at 00.39.06.jpeg");
+    background-size: cover;
+    background-position: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    gap: 5px;
     margin-left: 10px;
 }
 

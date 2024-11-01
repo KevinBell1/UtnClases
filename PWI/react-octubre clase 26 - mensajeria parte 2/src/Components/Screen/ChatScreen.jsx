@@ -71,6 +71,7 @@ export const ChatScreen = () => {
             id:'8',
         }])
     }
+    console.log(mensaje)
     return (
         <>
         <div className='celular'>

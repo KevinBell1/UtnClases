@@ -7,8 +7,7 @@ const Contact = ({contact}) => {
     return (
         <Link to={'ChatScreen/' + id } className='linkTo'>
             <div className='globoContactoUser'>
-                <div className='foto'>
-                    <p>foto</p>
+                <div className={nombre}>
                 </div>
                 <p className='name'>{nombre}</p>
                 <span className='time'>{mensajes.hour}</span>

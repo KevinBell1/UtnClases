@@ -1,13 +1,16 @@
 import React from 'react'
-import { DATA_MOOK } from '../../../data'
 import Mensaje from '../Mensaje/Mensaje'
+import './ChatList.css'
 
 
 
-const ChatList = ({data}) => {
+const ChatList = ({mensajes}) => {
+    const historialChat = mensajes.mensajes
+
+
     return (
-        <div>
-            {data.mensajes.text}
+        <div className='lista'>
+            {historialChat.map(chatRegistrado => <Mensaje dialogo={chatRegistrado} key={chatRegistrado.id}/>)}
         </div>
     )
 }
